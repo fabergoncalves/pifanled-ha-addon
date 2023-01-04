@@ -58,6 +58,10 @@ def smooth_color(color, led, increase=True):
             time.sleep(timer)
         pixels[led] = color
 
+import subprocess
+result = subprocess.run(['cat', '/proc/cpuinfo'], stdout=subprocess.PIPE)
+result.stdout
+
 while True:
     color = (random.randint(0, 255), random.randint(0, 255), random.randint(0, 255))
     for led in list_of_leds:
