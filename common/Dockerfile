@@ -11,5 +11,7 @@ RUN apk add --no-cache py3-pip
 COPY requirements.txt /tmp/
 RUN pip install --requirement /tmp/requirements.txt
 COPY rootfs /code/
+RUN chmod +x /code/controlar_rgb.py
+RUN chmod +x /code/entrypoint.py
 
-CMD [ "python3", "/code/controlar_rgb.py"]
+CMD [ "/code/entrypoint.sh"]
