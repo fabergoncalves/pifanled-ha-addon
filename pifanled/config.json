@@ -14,7 +14,7 @@
   ],
   "devicetree": true,
   "gpio": true,
-  "devices": ["/dev/mem"],
+  "devices": ["/dev/mem","/dev/gpiomem"],
   "privileged": ["SYS_RAWIO"],
   "boot": "auto",
   "init": false,
