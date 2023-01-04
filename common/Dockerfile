@@ -10,6 +10,9 @@ RUN apk add --no-cache musl-dev
 RUN apk add --no-cache python3-dev
 RUN apk add --no-cache py3-pip
 
+
+ADD /rpiws281x /rpiws281x
+RUN pip install /rpiws281x/library/
 COPY requirements.txt /tmp/
 RUN pip install --requirement /tmp/requirements.txt
 COPY rootfs/* /code/
