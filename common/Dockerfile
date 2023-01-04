@@ -1,5 +1,7 @@
 FROM alpine:latest
 
+ENV PYTHONUNBUFFERED=1
+
 # Add dependencies from Alpine
 RUN apk add --no-cache gcc
 RUN apk add --no-cache g++
