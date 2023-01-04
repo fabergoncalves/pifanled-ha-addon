@@ -1,4 +1,5 @@
-# https://developers.home-assistant.io/docs/add-ons/repository#repository-configuration
-name: Faber Pi Fan LED Controller
-url: 'https://github.com/fabergoncalves/pifanled-ha-addon'
-maintainer: Fabricio Silva
+{
+  "name": "Faber Pi Fan LED Controller",
+  "url": "https://github.com/fabergoncalves/pifanled-ha-addon'",
+  "maintainer": "Fabricio Silva"
+}
