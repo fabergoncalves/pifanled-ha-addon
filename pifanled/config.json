@@ -1,6 +1,6 @@
 {
   "name": "PiFanLED",
-  "version": "1.0.0",
+  "version": "latest",
   "slug": "pifanled",
   "description": "Control Pi Fan LED",
   "uart": true,
