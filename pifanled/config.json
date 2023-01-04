@@ -6,7 +6,14 @@
   "uart": true,
   "url": "https://github.com/fabergoncalves/pifanled-ha-addon",
   "startup": "application",
+  "arch": [
+    "aarch64",
+    "amd64",
+    "armhf",
+    "armv7",
+    "i386"
+  ],
   "boot": "auto",
   "init": false,
-  "image": "docker.io/fabergoncalves/pifanled:latest"
+  "image": "docker.io/fabergoncalves/pifanled:latest-{arch}"
 }
