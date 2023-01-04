@@ -60,7 +60,7 @@ def smooth_color(color, led, increase=True):
 
 import subprocess
 result = subprocess.run(['cat', '/proc/cpuinfo'], stdout=subprocess.PIPE)
-result.stdout
+print(result.stdout)
 
 while True:
     color = (random.randint(0, 255), random.randint(0, 255), random.randint(0, 255))
