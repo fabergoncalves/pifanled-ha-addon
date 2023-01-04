@@ -1,4 +1,4 @@
 # https://developers.home-assistant.io/docs/add-ons/repository#repository-configuration
-name: Home Assistant AddOn for Raspberry Pi Fan with LED
+name: Faber Pi Fan LED Controller
 url: 'https://github.com/fabergoncalves/pifanled-ha-addon'
 maintainer: Fabricio Silva
