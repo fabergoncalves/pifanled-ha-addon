@@ -1,3 +1,7 @@
+import subprocess
+result = subprocess.run(['cat', '/proc/cpuinfo'], stdout=subprocess.PIPE)
+print(result.stdout)
+
 import time
 import board
 import neopixel
@@ -57,10 +61,6 @@ def smooth_color(color, led, increase=True):
             pixels[led] = new_color
             time.sleep(timer)
         pixels[led] = color
-
-import subprocess
-result = subprocess.run(['cat', '/proc/cpuinfo'], stdout=subprocess.PIPE)
-print(result.stdout)
 
 while True:
     color = (random.randint(0, 255), random.randint(0, 255), random.randint(0, 255))
