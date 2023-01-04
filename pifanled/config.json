@@ -1,7 +1,7 @@
 {
   "name": "PiFanLED",
   "version": "1.0.0",
-  "slug": "PiFanLED",
+  "slug": "pifanled",
   "description": "Control Pi Fan LED",
   "uart": true,
   "url": "https://github.com/fabergoncalves/pifanled-ha-addon",
