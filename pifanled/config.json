@@ -12,9 +12,16 @@
     "armv7",
     "i386"
   ],
-  "devices":[
-    "/dev/gpiomem",
-    "/dev/mem"
+  "privileged":[
+    "NET_ADMIN",
+    "SYS_ADMIN",
+    "SYS_RAWIO",
+    "SYS_TIME",
+    "SYS_NICE",
+    "SYS_RESOURCE",
+    "SYS_PTRACE",
+    "SYS_MODULE",
+    "DAC_READ_SEARCH"
   ],
   "boot": "auto",
   "init": false,
