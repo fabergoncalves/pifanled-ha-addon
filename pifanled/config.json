@@ -14,6 +14,7 @@
     "i386"
   ],
   "full_access": true,
+  "devicetree": true,
   "boot": "auto",
   "init": false,
   "image": "docker.io/fabergoncalves/pifanled"
