@@ -5,7 +5,6 @@
   "description": "Control Pi Fan LED",
   "url": "https://github.com/fabergoncalves/pifanled-ha-addon",
   "startup": "application",
-  "hassio_role": "admin",
   "arch": [
     "aarch64",
     "amd64",
@@ -13,8 +12,10 @@
     "armv7",
     "i386"
   ],
-  "full_access": true,
   "devicetree": true,
+  "gpio": true,
+  "devices": ["/dev/mem"],
+  "privileged": ["SYS_RAWIO"],
   "boot": "auto",
   "init": false,
   "image": "docker.io/fabergoncalves/pifanled"
