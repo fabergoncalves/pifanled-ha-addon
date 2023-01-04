@@ -3,7 +3,6 @@
   "version": "latest",
   "slug": "pifanled",
   "description": "Control Pi Fan LED",
-  "uart": true,
   "url": "https://github.com/fabergoncalves/pifanled-ha-addon",
   "startup": "application",
   "arch": [
@@ -13,7 +12,7 @@
     "armv7",
     "i386"
   ],
-  "full_access": true
+  "full_access": true,
   "boot": "auto",
   "init": false,
   "image": "docker.io/fabergoncalves/pifanled"
