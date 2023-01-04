@@ -1,7 +1,6 @@
 import time
 import board
 import neopixel
-import numpy as np
 import random
 
 pixel_pin = board.D18
@@ -29,11 +28,11 @@ def get_array(old_color, new_color):
 
     division = 10
 
-    rslt = np.arange(min_color, max_color, max_color/10).tolist()
+    rslt = range(min_color, max_color, math.ceil(max_color/10))
 
     while len(rslt) < 10:
         division += 1
-        rslt = np.arange(min_color, max_color, max_color/division).tolist()
+        rslt = range(min_color, max_color, math.ceil(max_color/division))
 
     rslt_rounded = [round(result) for result in rslt]
     
