@@ -12,7 +12,10 @@
     "armv7",
     "i386"
   ],
-  "privileged": true,
+  "devices":[
+    "/dev/gpiomem",
+    "/dev/mem"
+  ],
   "boot": "auto",
   "init": false,
   "image": "docker.io/fabergoncalves/pifanled"
