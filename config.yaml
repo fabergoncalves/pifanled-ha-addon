@@ -3,7 +3,7 @@ name: Pi Fan LED
 version: "1.2.0"
 slug: example
 description: Pi Fan LED
-url: "https://github.com/home-assistant/addons-example/tree/main/example"
+url: "https://github.com/fabergoncalves/pifanled-ha-addon"
 arch:
   - armhf
   - armv7
