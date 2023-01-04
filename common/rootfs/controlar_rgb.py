@@ -1,10 +1,6 @@
 import subprocess
-result = subprocess.run(['cat', '/proc/cpuinfo'], stdout=subprocess.PIPE)
+result = subprocess.run(['cat', '/proc/device-tree'], stdout=subprocess.PIPE)
 print(result.stdout)
-print("")
-result = subprocess.run(['cat', '/proc/device-tree/system/linux,revision'], stdout=subprocess.PIPE)
-print(result.stdout)
-
 
 import time
 import board
